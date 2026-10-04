@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title> Galerie </title>
+    <style>
+    
+body{
+    background-color: #0e0d0d;
+    font-family: Arial, sans-serif; 
+    padding: 30px; 
+}
+.img{
+    position: relative; 
+    width: 170px; 
+    height: 115px;
+    border: 2px solid rgb(19, 18, 18); 
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+    
+.img img {
+    width: 100%;
+    height: 100%;
+}
+.img p {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    right: 0px;
+    color: black;  
+    text-align: center;
+    font-size: 15px;
+    background-color: rgba(50, 50, 50, 0.6);
+    padding: 5px 10px;
+    font-weight: bold;
+}
+.img:hover p {
+    display: none;
+}
+.img:hover {
+    border-color: white; 
+}
+ .icon{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: white;
+    color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+}
+   h1 {
+       color: white;
+   }
+   @keyframes  square{
+    0% {
+        translate: 0 0;
+    }
+    25% {
+        translate: 0 100px;
+    }
+    75% {
+        translate: 100px 100px;
+    }
+    100% {
+        translate: 0 0;
+    }
+   }
+   @keyframes loading {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+   }
+   @keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-5px);
+    }
+    50%{
+        transform: translateX(5px);
+    }
+    75%{
+        transform: translateX(-5px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+   }
+   .gallery #CL{
+     animation: loading 2s infinite
+   }
+   .gallery #KL{
+     animation: square 2s linear 1s infinite normal both running; 
+   }
+   .gallery #HL{
+    animation: shake 2s infinite ;
+   }
+   
+    </style>
+
+</head>
+<body>
+     <h1> Galerie d'image </h1>
+    <div class="gallery">
+         
+        <div class="img" id="CL">
+            <img src="fleur.jpeg" alt="Image 1"> 
+            <p>Titre de l'image 1</p>
+            <span class="icon">✳</span>
+
+
+        </div>
+        
+        <div class="img" id="HL">
+            <img src="fleur.jpeg" alt="Image 2"> 
+            <p>Titre de l'image 2</p>
+            <span class="icon">✳</span>
+
+
+        </div>
+        
+        <div class="img" id="GL">
+            <img src="fleur.jpeg" alt="Image 3"> 
+            <p>Titre de l'image 3</p>
+            <span class="icon">✳</span>
+
+
+        </div>
+        
+       <div class="img">
+            <img src="fleur.jpeg" alt="Image 4"> 
+            <p>Titre de l'image 4</p>
+           <span class="icon">✳</span>
+
+        </div>
+
+        <div class="img">
+            <img src="fleur.jpeg" alt="Image 5">
+            <p>Titre de l'image 5</p> 
+            <span class="icon">✳</span>
+
+        </div>
+
+
+        <div class="img">
+            <img src="fleur.jpeg" alt="Image 6"> 
+            <p>Titre de l'image 6</p>
+            <span class="icon">✳</span>
+
+        </div>
+        
+        <div class="img">
+            <img src="fleur.jpeg" alt="Image 7"> 
+            <p>Titre de l'image 7</p>
+            <span class="icon">✳</span>
+
+
+        </div>
+
+        <div class="img">
+            <img src="fleur.jpeg" alt="Image 8"> 
+            <p>Titre de l'image 8</p>
+           <span class="icon">✳</span>
+
+
+        </div>
+
+        <div class="img" id="KL">
+            <img src="fleur.jpeg" alt="Image 8"> 
+            <p>Titre de l'image 8</p>
+           <span class="icon">✳</span>
+
+
+        </div>
+   
+</body>
+</html>

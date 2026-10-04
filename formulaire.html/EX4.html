@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+      .radio-buttons input {
+    display: none;
+}
+
+.radio-buttons label {
+    border: 1px solid #555;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.radio-buttons input:checked + span {
+    background: #000;
+    color: white;
+}
+.emoji-radio input {
+    display: none;
+}
+
+.emoji-radio label span {
+    font-size: 22px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.emoji-radio input:checked + span {
+    color: rgb(0, 150, 255);
+    font-weight: bold;
+}
+.checkbox1 input {
+    display: none;
+}
+
+.checkbox1 label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.checkbox1 label::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border: 2px solid #00aee6;
+    margin-right: 8px;
+}
+
+.checkbox1 input:checked + span::before,
+.checkbox1 label input:checked ~ ::before {
+    background: #00aee6;
+}
+.emoji-checkbox input {
+    display: none;
+}
+
+.emoji-checkbox input:checked + span {
+    color: #00aee6;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <div class="radio-buttons">
+    <label>
+        <input type="radio" name="choix1">
+        <span> Oui  </span>
+    </label>
+    <label>
+        <input type="radio" name="choix1">
+        <span>Non </span>
+    </label>
+    <label>
+        <input type="radio" name="choix1">
+        <span> Pourquoi pas </span>
+    </label>
+</div>
+   <div class="emoji-radio">
+    <label>
+        <input type="radio" name="choix2">
+        <span>😀 Oui</span>
+    </label>
+    <label>
+        <input type="radio" name="choix2">
+        <span>😕 Non</span>
+    </label>
+</div>
+<div class="checkbox1">
+    <label>
+        <input type="checkbox">
+        <span>Déc cochée</span>
+    </label>
+    <label>
+        <input type="checkbox" checked>
+        <span>Cochée</span>
+    </label>
+</div>
+<div class="emoji-checkbox">
+    <label>
+        <input type="checkbox">
+        <span>😟 Démo 3 (version 2)</span>
+    </label>
+    <label>
+        <input type="checkbox">
+        <span>😃 Démo 3 (version 2)</span>
+    </label>
+</div>
+</body>
+</html>

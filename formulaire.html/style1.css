@@ -1,0 +1,59 @@
+body {
+    background: black;
+    color: white;
+}
+.a {
+    text-align: center;
+    position: relative;
+    left: 90px;
+    right: 30px;
+}
+img {
+    border-radius: 50%;
+}
+section{
+    display: flex;
+    position: relative;
+    left: 300px;
+}
+fieldset {
+    background: white;
+    color: black;
+    position: relative;
+    left: 200px;
+    height: 300px;
+}
+h3 {
+    color: rgb(57, 213, 248);
+}
+button {
+    background: rgb(57, 213, 248);
+    width: 200px;
+}
+input {
+    width: 200px;
+    height: 0px;
+    border: none;
+    border-bottom: 2px solid gray;
+    outline: none;
+    background: transparent;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+.ce {
+    background: gray;
+    position: relative;
+    top: 53px;
+    right: 35px;
+    padding: 15px;
+    width: 0%;
+    border-radius: 300px;
+}
+@media screen (max-width:700px) {
+    .fieldset {
+    position: relative;
+    right: 60px;
+    }
+}
+
+

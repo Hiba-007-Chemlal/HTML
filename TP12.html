@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TP12</title>
+    <style>
+   body{
+    background:#FFFFFF;
+   }
+   .menu{
+    background:#30A6E6 ;
+    position:sticky;
+    top: 0%;
+  }
+  .list{
+    list-style: none;
+    display: flex;
+   justify-content: center;
+    
+    }
+   a {
+   color: #FFFFFF;
+   text-decoration: none;
+   padding: 20px;
+   font-size: 12px;
+    }
+    nav ul li:nth-child(3){
+     background: black;
+    }  
+  
+    ul li ul li:nth-child(1){
+    background: orangered;
+    }
+    ul li ul li:nth-child(2){
+    background: black;
+    }
+   .liste{
+    position: absolute;
+    padding: 0;
+    list-style: none;
+    display: none;
+   }
+   nav ul li:hover ul{
+    display: block;
+   }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+    <ul class="list"> 
+        <li><a href="#"> accuiel </a></li>
+        <li><a href="#"> a propos moi </a></li>
+        <li>
+            <a href="#"> Articles </a>
+            <ul class="liste">
+                <li><a href="#"> HTML </a></li>
+                <li><a href="#"> CSS </a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+</body>
+</html>

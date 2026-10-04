@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title> Positionnement </title>
+    <style>
+        body {
+            padding: 50px;
+            display: flex;
+        }
+        .details {
+            background: blue;
+            position: relative;
+            left: 245px;
+            top: 100px;
+            width: 250px;
+        }
+        .fix {
+            position: fixed;
+            bottom: 0%;
+            right:0%;
+            background: blue;
+            width: 80px;
+        }
+        .article {
+            width: 800px;
+            height: 300px;
+            background: gray;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+        <div class="article"> Block1
+            <div class="details">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi 
+            numquam voluptatum esse tempora quam in tempore, modi aliquid, earum 
+            temporibus repudiandae facere blanditiis. Nostrum nam, deleniti modi 
+            totam quam eveniet.
+            </div>
+        </div>
+        <div class="fix">
+         fix
+        </div>
+</body>
+</html>

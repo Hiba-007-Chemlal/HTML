@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Planning des Tâches Par Equipes</title>
+<style>
+    caption {
+      font-size: 1.5em;
+      text-transform: capitalize;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    th,td {
+      padding: 10px;
+      text-align: center;
+    }
+    th:nth-child(2) {
+      font-size: 2em;
+      color: blue;
+    }
+    .nth-child1 {
+      background: #FCB941;
+    }
+    .nth-child2 {
+      background: #F1654C;
+    }
+    .nth-child3 {
+      background: #7E3661;
+      color: #fff;
+    }
+    .nth-child4 {
+      background: #888888;
+      color: #fff;
+    }
+    .semaine {
+      background: #8870FF;
+      color: #fff;
+    }
+</style>
+</head>
+<body>
+<table border="1">
+  <caption> Planning des taches par équipe </caption>
+            <tr>
+              <th rowspan="2"> Equipes </th>
+              <th colspan="5" align="center"> Janvier </th>
+            </tr> 
+            <tr>
+              <td> Lundi</td>
+              <td> Mardi </td>
+              <td> Mercredi </td>
+              <td> Jeudi </td>
+              <td> Vendredi </td>
+            </tr>
+        <tr>
+            <td class="nth-child3"> Equipe 1 </td>
+            <td colspan="3" align="center" class="nth-child2"> Tache 1</td>
+            <td colspan="2" align="center" class="nth-child2"> Tache 2</td>
+            <td rowspan="2" class="semaine"> Semaine 1 </td>
+        </tr>
+        <tr>
+            <td class="nth-child4"> Equipe 2 </td>
+            <td colspan="3" align="center" class="nth-child1"> Tache 1 </td>
+            <td colspan="2" align="center" class="nth-child1"> Tache 2 </td>
+        </tr>
+        <tr>
+            <td class="nth-child3"> Equipe 1 </td>
+            <td class="nth-child2"> Tache 3 </td>
+            <td colspan="3" align="center" class="nth-child2"> Tache 4</td>
+            <td class="nth-child2"> Tache 5 </td>
+            <td rowspan="2" class="semaine"> Semaine 2 </td>
+        </tr>
+        <tr>
+            <td class="nth-child4"> Equipe 2 </td>
+            <td colspan="2" class="nth-child1"> Tache 3 </td>
+            <td colspan="3" align="center" class="nth-child1"> Tache 4 </td>
+        </tr>
+        <tr>
+            <td class="nth-child3"> Equipe 1 </td>
+            <td colspan="2" align="center" class="nth-child2"> Tache 5</td>
+            <td colspan="3" align="center" class="nth-child2"> Tache 6</td>
+            <td rowspan="2" class="semaine"> Semaine 3 </td>
+        </tr>
+        <tr>
+            <td class="nth-child4"> Equipe 2 </td>
+            <td class="nth-child1"> Tache 5 </td>
+            <td colspan="4" align="center" class="nth-child1"> Tache 6 </td>
+        </tr>
+        <tr>
+            <td class="nth-child3"> Equipe 1 </td>
+            <td colspan="3" align="center" class="nth-child2"> Tache 7 </td>
+            <td colspan="2" align="center"class="nth-child2"> Tache 8</td>
+            <td rowspan="2" class="semaine"> Semaine 4</td>
+        </tr>
+        <tr>
+            <td class="nth-child4"> Equipe 2 </td>
+            <td colspan="2" align="center" class="nth-child1"> Tache 7 </td>
+            <td colspan="3" align="center" class="nth-child1"> Tache 8 </td>
+        </tr>
+</table> 
+</body>
+</html>

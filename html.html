@@ -1,0 +1,133 @@
+<!Doctype html>
+<html lang="fr">
+<head>
+  <title>exercice</title>  
+  <meta charset="UTF-8">
+</head> 
+<body>
+  <form>
+  <h2> Formulaire d'inscription-Exemple complet</h2>
+  <fieldset>
+    <legend>
+        Informations personnelles
+    </legend>
+    <label for="Prénom"> Prénom: </label>
+    <br>
+    <input type="text" placeholder="Votre prénom" required>
+    <br><br>
+    <label for="Nom"> Nom: </label>
+    <br>
+    <input type="text" id="Nom" name="Nom"placeholder="Votre nom ">
+    <br><br>
+    <label for="Email"> Email:</label>
+    <br>
+    <input type="emaile" name="emaile"placeholder="exemple@domaine.com">
+    <br><br>
+    <label for="tél"> Téléphone: </label>
+    <br>
+    <input type="tel" id="number" placeholder="+212 612345678">
+    <br><br>
+    <label for="date"> Date de naissance:</label>
+    <br>
+    <input type="date" name="Date" >
+    <br><br>
+    <label for="Time" > Heure de rendez-vous souhaitée:</label>
+    <br>
+    <input type="time" id="time" >
+    <br><br>
+    <label for="color"> Couleur préférée: </label>
+    <br>
+    <input type="color" id="color" value="#0077cc">
+    <br>
+  </fieldset>  
+  <fieldset>
+    <legend>
+        Adresse
+    </legend>
+    <label for="Adresse"> Adresse: </label>
+    <br>
+    <input type="adresse" id="adresse" placeholder="Numérro , rue ">
+    <br><br>
+    <label for="Ville"> Ville: </label>
+    <br>
+    <input type="text" id="ville" placeholder="Ville">
+    <br><br>
+    <label for="country" > Pays: </label>
+    <br>
+    <select name="contry" id="country">
+      <option value="..Choisir.."> ..Choisir..</option>
+      <option value="Maroc"> Maroc </option>
+      <option value="France"> France </option>
+      <option value="états-Unis"> états-Unis </option>
+      <option value="Autre"> Autre </option>
+    </select>
+  </fieldset>
+  <fieldset>
+    <legend>
+      Préférences & informations complémentaires
+    </legend>
+     <p> Méthode de contact préférée: </p>
+     <div>
+      <input type="radio" id="email" name="radio">
+      <label for="email" >Email</label>
+      <br>
+      <input type="radio" id="tel" name="radio">
+      <label for="tel" >Téléphone</label>
+      <br>
+      <input type="radio" id="sms" name="radio">
+      <label for="sms" >SMS</label>
+     </div>
+     <p> Centres d'intérêt: </p>
+     <div>
+      <input type="checkbox" value="dev" name="dev" checked>
+      <label for="dev"> Développment </label>
+      <br>
+      <input type="checkbox" value="IA" name="IA">
+      <label for="IA">Data/IA</label>
+      <br>
+      <input type="checkbox" value="des" name="des">
+      <label for="des"> Design </label>
+      </div>
+      <p> Langues parlées(maintenir Ctrl/Cmd pour sélectionner plusieurs):</p>
+        <select  multiple>
+          <option value="1"> France </option>
+          <option value="2"> Arabe </option>
+          <option value="3"> Anglais</option>
+          <option value="4"> Espagnol </option>
+        </select>
+      <br><br>
+          <label for="years"> Années d'expérience: </label>
+    <br>
+    <input type="number" id="number" name="number"placeholder="0">
+    <br><br>
+       <label for="vol">Niveau de motivation(0-10):</label>
+       <br>
+       <input type="range" id="vol" name="vol" min="0" max="10">
+       <br><br>
+       <label for="text"> Formation préférée </label>
+       <br>
+       <input type="for" id="for" name="for" placeholder="Choisir ou saisir">
+      <br>
+    <p> Message / motivation(max 500 caractères) </p>
+    <textarea cols="50" rows="10" name="content" placeholder="Présentez-vous en quelques lignes..." maxlength="500"></textarea>
+    <br>
+    <p> Joindre un CV (PDF,max 2 Mo).</p>
+    <input type="submit" value="Choisir un fichier"> Aucun fichier n'a été sélectionné
+  </fieldset>
+  <fieldset>
+    <legend>
+      Vérification
+    </legend>
+    <label for="somme"> Combien font 3+4 ?</label>
+    <br>
+    <input type="somme" id="somme" name="somme">
+  </fieldset>
+  <br>
+  <input type="submit" value="Enoyer">
+  <input type="Reset" value="Réinitialiser">
+  <input type="button" value="Bouton">
+  </form>
+  <br>
+  <i> Remarque: le formulaire utilise action="a" pour démonstration local.Pour traiter les donnéez,remmplacez action par l'URL de votre ... </i>
+</body>   
+</html>

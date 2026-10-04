@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestion des Candidatures</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    padding:30px;
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    background:white;
+    border-collapse:collapse;
+}
+
+th,td{
+    padding:15px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+th{
+    background:#0056b3;
+    color:white;
+}
+
+.accept{
+    background:#28a745;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+}
+
+.refuse{
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Gestion des Candidatures</h1>
+
+<table>
+
+<tr>
+<th>Nom</th>
+<th>Email</th>
+<th>CV</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>Ahmed Amine</td>
+<td>ahmed@gmail.com</td>
+<td><a href="#">Voir CV</a></td>
+<td>
+<button class="accept">Accepter</button>
+<button class="refuse">Refuser</button>
+</td>
+</tr>
+
+<tr>
+<td>Sara El Idrissi</td>
+<td>sara@gmail.com</td>
+<td><a href="#">Voir CV</a></td>
+<td>
+<button class="accept">Accepter</button>
+<button class="refuse">Refuser</button>
+</td>
+</tr>
+
+</table>
+
+</body>
+</html>

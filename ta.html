@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        tr:nth-child(3) td:nth-child(1) {
+            color: red;
+        }
+        tr:nth-child(3) td:nth-child(2) {
+            color: blue;
+        }
+        tr:nth-child(3) td:nth-child(3) {
+            color: rgb(22, 205, 22);
+        }
+        tr:nth-child(5) td:nth-child(1) {
+            color: rgb(30, 105, 205);
+        }
+        tr:nth-child(5) td:nth-child(2) {
+            color: rgb(110, 22, 169);
+        }
+        tr:nth-child(5) td:nth-child(3) {
+            color: rgb(34, 147, 16);
+        }
+        tr:nth-child(7) td:nth-child(1) {
+            color: rgb(126, 38, 226);
+        }
+        tr:nth-child(7) td:nth-child(2) {
+            color: rgb(244, 26, 182);
+        }
+        tr:nth-child(7) td:nth-child(3) {
+            color: rgb(4, 226, 251);
+        }
+        tr:nth-child(1){
+            background-color: rgb(122, 185, 205);
+        }
+         tr:nth-child(2) td:nth-child(1){
+            background-color: rgb(122, 185, 205);
+        }
+        tr:nth-child(4) td:nth-child(1){
+            background-color: rgb(122, 185, 205);
+        }
+        tr:nth-child(6) td:nth-child(1){
+            background-color: rgb(122, 185, 205);
+        }
+        tr:nth-child(8){
+            background-color: rgb(122, 185, 205);
+        }
+        tr:nth-child(2) td:nth-child(3) {
+            text-align: center;
+            vertical-align: top;
+        }
+        tr:nth-child(2) td:nth-child(4) {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th></th>
+            <th> Left </th>
+            <th> Centered </th>
+            <th> Right </th>
+        </tr>
+        <tr>
+            <td rowspan="2"> Top </td>
+            <td> <img src="khjgu.png"> </td>
+            <td> <img src="ydfuy.png"> </td>
+            <td> <img src="hgfju.png"> </td>
+        </tr>
+        <tr>
+            <td> style="text-align:left;vertical-align:top;"</td>
+            <td> style="text-align: center;vertical-align:top;"</td>
+            <td> style="text-align:right;vertical-align:top;"</td>
+        </tr>
+        <tr>
+            <td rowspan="2"> Centered </td>
+            <td> <img src="gchjku.png"> </td>
+            <td> <img src="ydfuy.png"> </td>
+            <td> <img src="hgfju.png"> </td>
+        </tr>
+        <tr>
+        <td> style="text-align:left;vertical-align:middle;"</td>
+        <td> style="test-align:center;vertical-align:middle;"</td>
+        <td> style="text-align:right;vertical-align:middle;color:black </td>
+        </tr>
+        <tr>
+            <td rowspan="2"> Bottom </td>
+            <td> <img src="jygikhg.png"></td>
+            <td> <img src="jygikhg.png"></td>
+            <td> <img src="jygikhg.png"></td>
+        </tr>
+        <tr>
+            <td> style="text-align:left;vertical-align:bottom;"</td>
+            <td> style="text-align:center;vertical-align:bottom;"</td>
+            <td> style="text-align:right;vertical-align:bottom"</td>
+        </tr>
+        <tr> <td colspan="4" align="center">Utilisation des styles CSS </td> </tr>
+    </table>
+</body>
+</html>

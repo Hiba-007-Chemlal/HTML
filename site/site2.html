@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Inscription</title>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f6f9;
+    background:linear-gradient(135deg,#0056b3,#0088ff);
+}
+
+header{
+    background:#0056b3;
+    color:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
+}
+
+.hero{
+    text-align:center;
+    padding:50px;
+}
+
+.hero input{
+    width:300px;
+    padding:10px;
+}
+
+.hero button{
+    padding:10px 20px;
+    background:#0056b3;
+    color:white;
+    border:none;
+}
+
+.offres{
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:15px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.card a{
+    text-decoration:none;
+    color:#0056b3;
+}
+
+.form-container{
+    width:400px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-container input,
+.form-container select{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+.btn{
+    width:100%;
+    background:#0056b3;
+    color:white;
+    border:none;
+    padding:12px;
+    cursor:pointer;
+}
+
+.dashboard{
+    padding:30px;
+}
+
+.sidebar{
+    width:250px;
+    background:#0056b3;
+    min-height:100vh;
+    padding:20px;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    margin-bottom:15px;
+}
+  .input-group{
+    margin-bottom:20px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    color:#333;
+    font-weight:600;
+}
+
+.input-group input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    outline:none;
+    transition:0.3s;
+}
+
+.input-group input:focus{
+    border-color:#0056b3;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    background:#0056b3;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#003f85;
+}
+</style>
+</head>
+<body>
+
+<div class="form-container">
+<h2>Inscription Stagiaire</h2>
+
+<form>
+<input class="input-group" type="text" placeholder="Nom" required>
+<input class="input-group" type="text" placeholder="Prénom" required>
+<input class="input-group" type="email" placeholder="Email" required>
+<input class="input-group" type="tel" placeholder="Téléphone" required>
+
+<select class="input-group">
+<option>Développement Digital</option>
+<option>Infrastructure Digitale</option>
+<option>Gestion des Entreprises</option>
+</select>
+
+<input class="input-group" type="password" placeholder="Mot de passe" required>
+<input class="input-group" type="password" placeholder="Confirmer mot de passe" required>
+
+<button class="btn">S'inscrire</button>
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { 
+            background-color: #f8f9fa; 
+            padding: 50px; 
+        }
+        .form-container { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 700px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2 class="mb-4">Formulaire d'inscription à l'événement</h2>
+
+    <form class="needs-validation" novalidate>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="nom" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="nom" required>
+                <div class="invalid-feedback">Veuillez entrer votre nom.</div>
+            </div>
+            <div class="col-md-6">
+                <label for="prenom" class="form-label">Prénom</label>
+                <input type="text" class="form-control" id="prenom" required>
+                <div class="invalid-feedback">Veuillez entrer votre prénom.</div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="nom@exemple.com" required>
+            <div class="invalid-feedback">Veuillez entrer une adresse email valide.</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="tel" class="form-label">Numéro de téléphone</label>
+            <input type="tel" class="form-control" id="tel" required>
+            <div class="invalid-feedback">Veuillez entrer votre numéro de téléphone.</div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label d-block">Sessions de l'événement</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="session1">
+                <label class="form-check-label" for="session1">Session 1 : Introduction à Bootstrap</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="session2">
+                <label class="form-check-label" for="session2">Session 2 : JavaScript avancé</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="session3">
+                <label class="form-check-label" for="session3">Autre session (précisez ci-dessous)</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="paiement" class="form-label">Mode de paiement</label>
+            <select class="form-select" id="paiement" required>
+                <option selected disabled value="">Choisissez votre mode de paiement</label></option>
+                <option value="carte">Carte Bancaire</option>
+                <option value="paypal">PayPal</option>
+            </select>
+            <div class="invalid-feedback">Veuillez choisir un mode de paiement.</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="cv" class="form-label">Téléchargez votre CV</label>
+            <input class="form-control" type="file" id="cv" required>
+            <div class="invalid-feedback">Veuillez télécharger votre CV.</div>
+        </div>
+
+        <div class="mb-4">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="conditions" required>
+                <label class="form-check-label" for="conditions">
+                    J'accepte les <a href="#">conditions d'utilisation</a>.
+                </label>
+                <div class="invalid-feedback">Vous devez accepter avant de soumettre.</div>
+            </div>
+        </div>
+
+        <button class="btn btn-primary w-100" type="submit">S'inscrire</button>
+    </form>
+</div>
+
+
+
+</body>
+</html>

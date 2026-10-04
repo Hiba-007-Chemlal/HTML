@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- ✅ 1) viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> ex </title>
+
+    <style>
+        /* ✅ 2) Unités relatives / Flexible */
+        body {
+            margin: 0%;
+            background-color: #e8f6ff;
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+        }
+
+        /* ✅ 3) Flexbox */
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        main {
+            width: 25%;
+            padding: 5%;
+        }
+
+        main a {
+            display: block;
+            background-color: #9bddff;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            text-decoration: none;
+            color: #004c80;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        .content {
+            width: 75%;
+            padding: 5%;
+            color: #004c80;
+            font-size: 1.1rem;
+        }
+
+        /* ✅ 5) Responsive image */
+        img {
+            max-width: 50%;
+            height: auto;
+        }
+
+        ul li {
+            margin-bottom: 0.6rem;
+        }
+
+        /* ✅ 4) Media Queries */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            main {
+                width: 100%;
+                padding: 3%;
+            }
+
+            .content {
+                width: 100%;
+                padding: 3%;
+            }
+
+            main a {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <a href="#">ACCUEIL</a>
+            <a href="#">COURS ET TUTORIELS</a>
+            <a href="#">NOS RESSOURCES</a>
+            <a href="#">FORUMS</a>
+            <a href="#">CONTACT</a>
+        </main>
+
+        <div class="content">
+            <h1>Bienvenue sur acppedagogie!</h1>
+
+            <p>
+                Apprenez et révisez les examens Microsoft Office Spécialiste et Expert,
+                à l'aide des vidéos des cours et des exercices interactifs.<br><br>
+                Découvrez les astuces Microsoft Office Word, Excel, PowerPoint et Access...
+            </p>
+            <ul>
+                <li>Des vidéos en ligne haute qualité HD.</li>
+                <li>Des cours qui s'a dressent à toute personne.</li>
+                <li>Des tutoriels et conseils bien expliqués.</li>
+            </ul>
+            <!-- Exemple d'image-->
+            <img src="fleur.jpeg" alt="image responsive">
+
+            
+        </div>
+    </div>
+</body>
+</html>

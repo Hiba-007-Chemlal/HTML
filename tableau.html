@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+<title> inscription.html</title>
+<meta charset="UTF-8">
+    </head>
+    <body>
+        <form method="post">
+            <fieldset>
+                <legend></legend>
+        <table>
+            <tr>
+                <td> Nom </td>
+                <td>
+                    <input type="text" size="30">
+                </td>
+            </tr>
+            <tr>
+                <td> Prénom</td>
+                <td>
+                    <input type="text" size="30">
+                </td>
+            </tr>
+            <tr>
+                <td> Sexe </td>
+                <td>
+                    <input type="radio" size="30" name="sexe">
+                    <label for="radio"> Féminin </label>
+                    <input type="radio" size="30" name="sexe">
+                    <label for="radio"> Masculin </label>
+                </td>
+            </tr>
+            <tr>
+                <td> Date de naissance &nbsp; &nbsp; &nbsp; </td>
+                <td>
+                    <input id="date" type="date">
+                    <label for="date"></label>
+                </td>
+            </tr>
+            <tr>
+                <td> Niveau d'étude </td>
+                <td>
+                    <select name="select" size="3">
+                        <option> 3ème année Collège</option>
+                        <option> 1<sup>er</sup> année lycée</option>
+                        <option> 2ème année lycée</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td> Spécialité </td>
+                <td>
+                    <input list="Specialite">
+                    <datalist id="Spécialité"></datalist>
+                </td>
+            </tr>
+            <tr>
+                <td> Téléphone </td>
+                <td>
+                    <input type="tel" pattern="^06[0-9]{8}$">
+                </td>
+            </tr>
+            <tr>
+                <td> Email </td>
+                <td>
+                    <input type="email" pattern="^[a-ZA-Z0-9-%+]+@[a-ZA-ZO-9]+\.[a-ZA-Z]{2}$">
+                </td>
+            </tr>
+            <tr>
+                <td> Site web personnel </td>
+                <td>
+                    <input type="url">
+                </td>
+            </tr>
+            <tr>
+                <td> Adresse </td>
+                <td>
+                    <textarea name="text"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td> Loisires </td>
+                <td>
+                    <input type="checkbox" id="Loisires">
+                    <label for="natation"> Natation</label>
+                    <br>
+                    <input type="checkbox" id="Loisires">
+                    <label for="dessin"> Dessin </label>
+                    <br>
+                    <input type="checkbox" id="Loisires">
+                    <label  for="basket-ball"> Basket-ball</label>
+                </td>
+            </tr>
+            <tr>
+                <td> Photo </td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <input type="submit" value="valider">
+                </td>
+                <td>
+                    <br>
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+        </fieldset>
+        </form>
+    </body>
+</html>

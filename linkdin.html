@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiba | Digital Developer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: #f7f4ff;
+    color: #17151f;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* MAIN CARD */
+
+.portfolio {
+    width: 92%;
+    max-width: 1200px;
+    min-height: 560px;
+
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+
+    background: #ffffff;
+    border-radius: 35px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 25px 70px rgba(79, 55, 120, 0.15);
+}
+
+
+/* LEFT */
+
+.left {
+    padding: 65px 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+.badge {
+    width: fit-content;
+
+    padding: 8px 15px;
+    margin-bottom: 22px;
+
+    border-radius: 30px;
+
+    background: #eee8ff;
+    color: #7355d8;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+h1 span {
+    color: #7657df;
+}
+
+.intro {
+    max-width: 600px;
+
+    color: #68636f;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.intro strong {
+    color: #27222e;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+    display: flex;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.btn {
+    text-decoration: none;
+
+    padding: 13px 22px;
+
+    border-radius: 14px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.primary {
+    background: #7657df;
+    color: white;
+}
+
+.primary:hover {
+    background: #6042c8;
+    transform: translateY(-3px);
+}
+
+.secondary {
+    border: 1px solid #ddd8e8;
+    color: #292532;
+}
+
+.secondary:hover {
+    background: #f5f1ff;
+}
+
+
+/* SKILLS */
+
+.skills {
+    display: flex;
+    gap: 9px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.skills span {
+    padding: 7px 13px;
+
+    border-radius: 10px;
+
+    background: #f4f1fa;
+    color: #625b70;
+
+    font-size: 12px;
+}
+
+
+/* RIGHT */
+
+.right {
+    position: relative;
+
+    background: #7657df;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* DECORATIVE CIRCLES */
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {
+    width: 350px;
+    height: 350px;
+
+    border: 60px solid rgba(255,255,255,0.08);
+
+    top: -130px;
+    right: -100px;
+}
+
+.circle2 {
+    width: 250px;
+    height: 250px;
+
+    background: rgba(255,255,255,0.06);
+
+    bottom: -120px;
+    left: -100px;
+}
+
+
+/* PHOTO */
+
+.image-card {
+    position: relative;
+    z-index: 2;
+
+    width: 280px;
+    height: 350px;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    background: #ddd;
+
+    box-shadow: 0 25px 50px rgba(35, 20, 70, 0.3);
+
+    transform: rotate(3deg);
+
+    transition: 0.4s;
+}
+
+.image-card:hover {
+    transform: rotate(0deg) scale(1.03);
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.image-info {
+    position: absolute;
+
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+
+    padding: 15px;
+
+    border-radius: 18px;
+
+    background: rgba(255,255,255,0.9);
+
+    backdrop-filter: blur(10px);
+}
+
+.image-info small {
+    color: #777;
+    font-size: 10px;
+}
+
+.image-info h3 {
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+
+/* FLOATING CARDS */
+
+.floating-card {
+    position: absolute;
+
+    z-index: 3;
+
+    padding: 12px 17px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 15px 30px rgba(30, 15, 70, 0.2);
+
+    font-size: 13px;
+    font-weight: 600;
+
+    animation: float 3s ease-in-out infinite;
+}
+
+.floating-card span {
+    margin-left: 5px;
+}
+
+.card1 {
+    top: 100px;
+    left: 30px;
+}
+
+.card2 {
+    bottom: 90px;
+    right: 25px;
+
+    animation-delay: 1s;
+}
+
+
+@keyframes float {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+    body {
+        overflow: auto;
+        padding: 25px 0;
+    }
+
+    .portfolio {
+        grid-template-columns: 1fr;
+        width: 92%;
+    }
+
+    .left {
+        padding: 45px 30px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .right {
+        min-height: 450px;
+    }
+
+}
+    </style>
+</head>
+
+<body>
+
+    <main class="portfolio">
+
+        <!-- Partie gauche -->
+        <section class="left">
+
+            <div class="badge">
+                ✦ DIGITAL DEVELOPER
+            </div>
+
+            <h1>
+                Hello, I'm <span>Hiba</span> 👋
+            </h1>
+
+            <p class="intro">
+                Étudiante en 2ème année de
+                <strong>Développement Digital</strong> à l'ISTA.
+                Je transforme mes idées en expériences web
+                simples, modernes et créatives.
+            </p>
+
+            <div class="buttons">
+                <a href="#" class="btn primary">Découvrir mon profil →</a>
+                <a href="hiba007chemlal@gmail.com" class="btn secondary">
+                    Me contacter
+                </a>
+            </div>
+
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+            </div>
+
+        </section>
+
+
+        <!-- Partie droite -->
+        <section class="right">
+
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+
+            <div class="image-card">
+
+                <!-- Remplace profile.jpg par ta photo -->
+                <img src="Ana.jpeg" alt="Photo de Hiba">
+
+                <div class="image-info">
+                    <small>Currently learning</small>
+                    <h3>Web Development 💻</h3>
+                </div>
+
+            </div>
+
+            <div class="floating-card card1">
+                💡 <span>Creative</span>
+            </div>
+
+            <div class="floating-card card2">
+                🎓 <span>Student</span>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

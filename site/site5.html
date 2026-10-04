@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Détail Offre</title>
+<style>
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    padding:40px 20px;
+    background:linear-gradient(135deg,#0056b3,#0088ff);
+}
+
+/* Conteneur principal */
+.detail-container{
+    max-width:900px;
+    margin:auto;
+    background:#fff;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Titre */
+.detail-container h1{
+    color:#0056b3;
+    margin-bottom:20px;
+    font-size:32px;
+    border-bottom:3px solid #0056b3;
+    padding-bottom:10px;
+}
+
+/* Informations */
+.info{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.info-item{
+    background:#f8f9fa;
+    padding:15px;
+    border-radius:10px;
+    flex:1;
+    min-width:200px;
+}
+
+.info-item strong{
+    color:#0056b3;
+}
+
+/* Description */
+.description{
+    margin-top:20px;
+}
+
+.description h3{
+    color:#0056b3;
+    margin-bottom:15px;
+}
+
+.description p{
+    line-height:1.8;
+    color:#444;
+}
+
+/* Compétences */
+.skills{
+    margin-top:30px;
+}
+
+.skills h3{
+    color:#0056b3;
+    margin-bottom:15px;
+}
+
+.skill{
+    display:inline-block;
+    background:#e8f1ff;
+    color:#0056b3;
+    padding:8px 15px;
+    border-radius:20px;
+    margin:5px;
+    font-size:14px;
+}
+
+/* Bouton Postuler */
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 30px;
+    background:#0056b3;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#003f85;
+    transform:translateY(-2px);
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .detail-container{
+        padding:25px;
+    }
+
+    .detail-container h1{
+        font-size:24px;
+    }
+
+    .info{
+        flex-direction:column;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="detail-container">
+
+<h1>Développeur Web</h1>
+
+<p><strong>Entreprise :</strong> Tech Maroc</p>
+<p><strong>Ville :</strong> Casablanca</p>
+<p><strong>Durée :</strong> 2 mois</p>
+
+<h3>Description</h3>
+
+<p>
+Participation au développement d'applications web,
+maintenance et amélioration des sites internet.
+</p>
+
+<button class="btn">
+Postuler
+</button>
+
+</div>
+
+</body>
+</html>

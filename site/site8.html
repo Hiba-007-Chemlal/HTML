@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Administration</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+.container{
+    display:flex;
+}
+
+.sidebar{
+    width:250px;
+    height:100vh;
+    background:#0056b3;
+    padding:20px;
+}
+
+.sidebar h2{
+    color:white;
+    margin-bottom:30px;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    margin-bottom:10px;
+}
+
+.content{
+    flex:1;
+    padding:30px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="sidebar">
+<h2>Administrateur</h2>
+
+<a href="#">Gestion des Stagiaires</a>
+<a href="#">Gestion des Entreprises</a>
+<a href="#">Gestion des Offres</a>
+<a href="#">Statistiques</a>
+
+</div>
+
+<div class="content">
+
+<h1>Tableau de Bord Administrateur</h1>
+
+<div class="card">
+<h3>Nombre de Stagiaires</h3>
+<p>250</p>
+</div>
+
+<div class="card">
+<h3>Nombre d'Entreprises</h3>
+<p>80</p>
+</div>
+
+<div class="card">
+<h3>Nombre d'Offres</h3>
+<p>150</p>
+</div>
+
+<div class="card">
+<h3>Nombre de Candidatures</h3>
+<p>600</p>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

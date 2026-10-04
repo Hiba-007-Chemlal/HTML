@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title> Position relative </title>
+    <style>
+       h1 {
+         color: red;
+       }
+       p {
+         font-size: 20px;
+       }
+        .parent {
+          font-size: 20px;
+          background: pink;
+          padding: 15px;
+          border-radius: 3%;
+       }
+       .parent div {
+          height: 50px;
+       }
+       .parent :nth-child(1) {
+          background: yellow;
+       }
+       .parent :nth-child(2) {
+          background: aqua;
+          position: relative;
+          bottom:20px;
+       }
+       .parent :nth-child(3) {
+          background: rgb(55, 233, 55);
+       }
+       table {
+          font-size: 20px;
+       }
+    </style>
+</head>
+<body>
+    <h1> Position : </h1>
+    <p> La propriété "position" controle l'emplacement d'un élèment sur la page et son comportement par rapport aux autres élèments . </p>
+    <div class="parent">
+        <div> Hiba </div>
+        <div> Lamyaa </div>
+        <div> Fatima Zahrae </div>
+    </div>
+    <h1> Pourquoi utilise "Position:relative" : </h1>
+    <p> - Déplacez légèrement l'élément sans perturber le flux naturel de la page .</p>
+    <h1> La comparaison : </h1>
+    <table border="1">
+        <tr>
+        <th> Type de position </th>
+        <th> Sort de l'organisation ? </th>
+        <th> Peut étre déplacé (top/right....)? </th>
+        </tr>
+        <tr>
+            <th> Static </th>
+            <td> Non </td>
+            <td> Non </td>
+        </tr>
+        <tr>
+            <th> Relative </th>
+            <td> Non </td>
+            <td> Oui </td>
+        </tr>
+        <tr>
+            <th> Absolute </th>
+            <td>  Non</td>
+            <td> Oui </td>
+        </tr>
+        <tr>
+            <th> Fixed </th>
+            <td> Oui </td>
+            <td> Oui </td>
+        </tr>
+        <tr>
+            <th> Sticky </th>
+            <td> Parfois </td>
+            <td> Oui </td>
+        </tr>
+    </table>
+</body>
+</html>

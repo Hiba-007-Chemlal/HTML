@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercice 3 </title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        .col{
+           display: flex;
+           gap: 10px;
+        }
+        button{
+            color: azure;
+            display: flex;
+        }
+        td{
+            color: black;
+        }
+        .container{
+            border: 2px solid transparent;
+            box-shadow:  5px 5px 40px gray;
+            padding-top: 20px;
+        }
+        form{
+            padding-left: 40px;
+            padding-top: 20px;
+        }
+        .a{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container ">
+    <div class="row">
+        <div class="col" >
+             <h1>
+               Product List
+             </h1>
+            <button type="button " class="bg-dark" > +Create New </button>
+            <button type="button"  class="bg-dark" > Edit </button>
+        </div> 
+    </div>
+      <section class="row">
+        <div class="col">
+        <table class="table table-bordered ">
+            <thead>
+              <tr>
+                <th> <input type="checkbox"> </th>
+                <th> Product Name </th>
+                <th> Category </th>
+                <th> Price </th>
+                <th> Qty </th>
+               <th> Action </th>
+              </tr>
+            </thead>
+              <tr class="table-dark" >
+                <td> <input type="checkbox"> </td>
+                <td> Produit 1 </td>
+                <td> Beauty </td>
+                <td> $120 </td>
+                <td> 1568 </td>
+                <td class="a"> <button class="bg-primary" >Modifier</button>
+                    <button  class="bg-danger" type="reset" > Supprimer</button>
+                </td>
+              </tr>
+              <tr>
+                <td> <input type="checkbox"> </td>
+                <td> Produit 2 </td>
+                <td> Beauty </td>
+                <td> $30 </td>
+                <td> 167 </td>
+                <td class="a"> <button class="bg-primary"> Modifier</button>
+                    <button class="bg-danger" type="reset"> Supprimer </button>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <td> <input type="checkbox"> </td>
+                <td> Produit 3 </td>
+                <td> Beauty </td>
+                <td> $150 </td>
+                <td> 154 </td>
+                <td class="a"> <button class="bg-primary"> Modifier</button>
+                    <button class="bg-danger" type="reset"> Supprimer </button>
+                </td>
+              </tr>
+              <tr>
+                <td> <input type="checkbox"> </td>
+                <td> Produit 4 </td>
+                <td> Beauty </td>
+                <td> $150 </td>
+                <td> 154 </td>
+                <td class="a"> <button class="bg-primary"> Modifier</button>
+                    <button class="bg-danger" type="reset"> Supprimer </button>
+                </td>
+              </tr>
+        </table>
+        </div>
+       <div class="col">
+        <form action="/action_page.php" class="was-validated ">
+            <h2> Product Registration </h2>
+            <div class="mb-3 mt-3">
+                <label for="description" class="form-label"> Description</label>
+                <input type="text" class="form-control" id="description" name="text" required>
+                <div class="valid-feedback"> Valide</div>
+                <div class="invalid-feedback"> Merci de remplir ce champ.</div>    
+            </div>
+             <div class="mb-3">
+                <label for="number" class="form-label"> Price </label>
+                <input type="number" class="form-control" id="price" name="number" required>
+                <div class="valid-feedback"> Valide</div>
+                <div class="invalid-feedback"> Merci de remplir ce champ.</div>    
+            </div>
+             <div class="mb-3">
+                <label for="number" class="form-label"> Qty </label>
+                <input type="number" class="form-control" id="qty" name="number" required>
+                <div class="valid-feedback"> Valide</div>
+                <div class="invalid-feedback"> Merci de remplir ce champ.</div>    
+            </div>
+             <div class="mb-3 mt-3">
+                <label for="text" class="form-label"> Note </label>
+                <textarea type="text" id="text" name="text" >
+                </textarea>    
+            </div>
+        </form>
+      </div>   
+      </section>   
+    </div>
+</body>
+</html>

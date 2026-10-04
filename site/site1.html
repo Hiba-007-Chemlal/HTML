@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StageOFPPT - Accueil</title>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f6f9;
+}
+
+header{
+    background:#0056b3;
+    color:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
+}
+
+.hero{
+    text-align:center;
+    padding:50px;
+}
+
+.hero input{
+    width:300px;
+    padding:10px;
+}
+
+.hero button{
+    padding:10px 20px;
+    background:#0056b3;
+    color:white;
+    border:none;
+}
+
+.offres{
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:15px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.card a{
+    text-decoration:none;
+    color:#0056b3;
+}
+
+.form-container{
+    width:400px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-container input,
+.form-container select{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+.btn{
+    width:100%;
+    background:#0056b3;
+    color:white;
+    border:none;
+    padding:12px;
+    cursor:pointer;
+}
+
+.dashboard{
+    padding:30px;
+}
+
+.sidebar{
+    width:250px;
+    background:#0056b3;
+    min-height:100vh;
+    padding:20px;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    margin-bottom:15px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Plateforme de Recherche de Stages OFPPT</h1>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="offres.html">Offres</a>
+        <a href="connexion.html">Connexion</a>
+        <a href="inscription.html">Inscription</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Trouvez votre stage facilement</h2>
+    <input type="text" placeholder="Rechercher un stage...">
+    <button>Rechercher</button>
+</section>
+
+<section class="offres">
+    <h2>Offres récentes</h2>
+
+    <div class="card">
+        <h3>Développeur Web</h3>
+        <p>Casablanca</p>
+        <a href="detail-offre.html">Voir détails</a>
+    </div>
+
+    <div class="card">
+        <h3>Technicien Réseau</h3>
+        <p>Rabat</p>
+        <a href="detail-offre.html">Voir détails</a>
+    </div>
+</section>
+
+</body>
+</html>
